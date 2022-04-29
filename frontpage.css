@@ -1,119 +1,162 @@
 
-
-body{
-    width:1400px;
-    height:700px;
-    background-color:black;
-    margin:0 auto;
+.body{
+    width: 400px;
+    height: 500px;
 }
 
 .header{
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:10;
-    height:12%;
-    align-items: flex-end;
-    background-color: rgb(157,204,224,0.4);
-}
-.header-content{
-    width: calc(50% / 4);
-    float:left;
-    text-align:center;
-    font-size: 25px;
-    color:white;
-}
-.header-content a{
-    text-align:center;
+    width:100%;
+    height: 150px;
+    font-size: 20px;
     text-decoration: none;
-    color:white;
 }
 
 .main{
     width:100%;
-    height:84%;
-    padding-top:5%;
-    display:flex;
-    flex-wrap: wrap;
-    font: italic 1.2em "Fira Sans", serif;
-    background-image: url("./20200811_124732_HDR.jpg");
-    background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
-    background-position:center center;                     /* 画像の表示位置を指定  */
-    background-size:contain; 
+    height: 200px;
 }
 .left_side{
-    padding-top:2%;
-    width:20%;
-    height:95%;
+    width:100%;
+    height:200px;
     float:left;
     background-color: rgba(234,232,235,0.4);
-    font-size: 30px;
+    font-size: 20px;
 }
 .left_side_link{
-   display:block;
-   height:60px;
-   text-align: center;
-   color:white;
-   text-decoration: none;
+    display:block;
+    text-align: center;
+    text-decoration: none;
 }
 .right_side{
-    width:80%;
-    height:100%;
-    float:left;
-    position:relative;
-}
-.right_side p{
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    font: italic 1.2em "Fira Sans", serif;
-    color: white;
-    font-size: 50px;
-    padding-top:10px;
-}
-.right_side_bottom{
-    position:absolute;
-    width:35%;
-    height:35%;
-    bottom:0px;
-    right:0px;
-    font-family: 'Noto Sans JP', sans-serif;
-    display: table;
-    background-image: url("./1.jpg");
-    background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
-    background-position:center center;                     /* 画像の表示位置を指定  */
-    background-size: contain;
-}
-.right_side_bottom div{
-  display: table-cell;
-  vertical-align: middle;
-  color: white;
-  text-align:center;
-  font: italic 1.2em "Fira Sans", serif;
-}
-.right_side_bottom a2{
-    font-size: 40px;
+    display:none;
 }
 
-.header,.footer{
-    width:100%;
-    display:flex;
-    flex-wrap: wrap;
-    font: italic 1.2em "Fira Sans", serif;
-}
 .footer{
-    height:8%;
-    z-index: 2;
-}
-.footer div{
-    width: calc(25% / 2);
-    float:left;
-    text-align: center;
-}
-.footer a{
+    width:100%;
+    height: 150px;
+    font-size: 20px;
     text-decoration: none;
-    text-align:center;
-    font-size: 30px;
-    color:white;
+}
+
+@media screen and (min-width: 481px) {
+    body{
+        width:1400px;
+        height:700px;
+        background-color:black;
+        margin:0 auto;
+    }
+    
+    .header{
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:10;
+        height:12%;
+        align-items: flex-end;
+        background-color: rgb(157,204,224,0.4);
+    }
+    .header-content{
+        width: calc(50% / 4);
+        float:left;
+        text-align:center;
+        font-size: 25px;
+        color:white;
+    }
+    .header-content a{
+        text-align:center;
+        text-decoration: none;
+        color:white;
+    }
+    
+    .main{
+        width:100%;
+        height:84%;
+        padding-top:5%;
+        display:flex;
+        flex-wrap: wrap;
+        font: italic 1.2em "Fira Sans", serif;
+        background-image: url("./20200811_124732_HDR.jpg");
+        background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
+        background-position:center center;                     /* 画像の表示位置を指定  */
+        background-size:contain; 
+    }
+    .left_side{
+        display:block;
+        padding-top:2%;
+        width:20%;
+        height:95%;
+        float:left;
+        background-color: rgba(234,232,235,0.4);
+        font-size: 30px;
+    }
+    .left_side_link{
+       display:block;
+       height:60px;
+       text-align: center;
+       color:white;
+       text-decoration: none;
+    }
+    .right_side{
+        display:block;
+        width:80%;
+        height:100%;
+        float:left;
+        position:relative;
+    }
+    .right_side p{
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        font: italic 1.2em "Fira Sans", serif;
+        color: white;
+        font-size: 50px;
+        padding-top:10px;
+    }
+    .right_side_bottom{
+        position:absolute;
+        width:35%;
+        height:35%;
+        bottom:0px;
+        right:0px;
+        font-family: 'Noto Sans JP', sans-serif;
+        display: table;
+        background-image: url("./1.jpg");
+        background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
+        background-position:center center;                     /* 画像の表示位置を指定  */
+        background-size: contain;
+    }
+    .right_side_bottom div{
+      display: table-cell;
+      vertical-align: middle;
+      color: white;
+      text-align:center;
+      font: italic 1.2em "Fira Sans", serif;
+    }
+    .right_side_bottom a2{
+        font-size: 40px;
+    }
+    
+    .header,.footer{
+        width:100%;
+        display:flex;
+        flex-wrap: wrap;
+        font: italic 1.2em "Fira Sans", serif;
+    }
+    .footer{
+        height:8%;
+        z-index: 2;
+    }
+    .footer div{
+        width: calc(25% / 2);
+        float:left;
+        text-align: center;
+    }
+    .footer a{
+        text-decoration: none;
+        text-align:center;
+        font-size: 30px;
+        color:white;
+    }
+
 }
 
 
